@@ -22,6 +22,7 @@
  ON_ACTION: self.counter(Tag.charge) -=1    pick_enemy()  fight(picked_enemy, current.player.counter(Tag.WILLPOWER), damage_add=1, on_skull="current.player.counter(Tag.WILLPOWER) 
  ON_FAST_ACTION: self.exhaust()  current_player.counter(Tag.HORROR) +=1 self.counter(Tag.Secrets) -=1    if self.counter(Tag.Secrets) == 0:  self.discard(current_player.discard_pile
  ON_SKILL_TEST: skill.result(Tag.WILLPOWER) +=1  
+ CURRENT_PLAYER_AFTER_SPELL: current.player.draw_card()
  
   
 """
